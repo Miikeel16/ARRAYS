@@ -402,5 +402,52 @@ public class ejercicios {
         return diferencia;
     }
 
+    public int[] invertido (int[]nums){
+        int[] res = new int[nums.length];
+        int cont = 0;
+        for(int i =nums.length - 1; i>=0; i--){
+            res[cont]= nums[i];
+            cont++;
+        }
+        return res;
+    }
+    public int[] impares (int[]nums){
+        int[] res = new int[nums.length];
+        int cont =0;
+        for(int i=0; i<nums.length;i++){
+            if (nums[i]%2!=0){
+                res[cont]=nums[i];
+                cont++;
+            }
+        }
+        return res;
+    }
+    public int[] pares (int[]nums){
+        int[] res = new int[nums.length];
+        int cont =0;
+        for(int i=0; i<nums.length;i++){
+            if (nums[i]%2=0){
+                res[cont]=nums[i];
+                cont++;
+            }
+        }
+        return res;
+    }
+    public int entero (int[] nums, int entero){
+        int cont=0;
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i]==entero){
+                cont++;
+            }
+        }
+        return cont;
+    }
+
+
+
+
+
+
+
 
 }
